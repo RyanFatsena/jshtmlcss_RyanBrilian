@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Music Website</title>
+        <link rel="stylesheet" href="stylewm.css">
+    </head>
+    <body>
+        <div class="containerHome">
+            <div class="navbar">
+                <img src="img sound/logo.png" class="logo">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="Web Musik.html">MUSIC</a></li>
+                    <li><a href="label.html">LABEL</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="contentHome">
+                <div class="center-col">
+                    <img src="img sound/aku.png" id="iconHome" title="Click Here">
+                </div>
+                <div class="right-col">
+                    <h1>Hello, Welcome To <br>Iyan's Music Website</h1>
+                </div>
+            </div>
+        </div>
+        <audio id="mySongHome">
+            <source src="img sound/Welcome.mp3" type="audio/mp3">
+        </audio>
+
+    <script>
+        var mySongHome = document.getElementById("mySongHome");
+        var iconHome = document.getElementById("iconHome");
+        
+        iconHome.onclick = function(){
+            if(mySongHome.paused){
+                mySongHome.play()
+                iconHome.src = "img sound/aku.png"
+            }
+            else{
+                mySongHome.pause();
+                iconHome.src = "img sound/aku.png"
+            }
+        }
+    </script>
+
+    </body>
+</html>
