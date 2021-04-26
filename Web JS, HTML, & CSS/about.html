@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Music Website</title>
+        <link rel="stylesheet" href="stylewm.css">
+    </head>
+    <body>
+        <div class="containerAbout">
+            <div class="navbar">
+                <img src="img sound/logo.png" class="logo">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="Web Musik.html">MUSIC</a></li>
+                    <li><a href="label.html">LABEL</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="contentAbout">
+                <div class="centerTopAbout-col">
+                    <img src="img sound/about.png" id="iconAbout" title="Click Here">
+                </div>
+                <div class="centerBottomAbout-col">
+                    <p>
+                        Hello, My name is Ryan Brilian Fatsena. I am a student of 
+						Sebelas Maret University majoring in <br> Computer and 
+						Informatics Engineering Education.
+						I was born in Sukoharjo, January 17, 2002. <br>
+						Now, I live in Krajan Rt 01 / Rw 04 Bulakrejo, Sukoharjo, 
+						Sukoharjo, Central Java.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <audio id="mySongAbout">
+            <source src="img sound/About.mp3" type="audio/mp3">
+        </audio>
+
+    <script>
+        var mySongAbout = document.getElementById("mySongAbout");
+        var iconAbout = document.getElementById("iconAbout");
+        
+        iconAbout.onclick = function(){
+            if(mySongAbout.paused){
+                mySongAbout.play()
+                iconAbout.src = "img sound/about.png"
+            }
+            else{
+                mySongAbout.pause();
+                iconAbout.src = "img sound/about.png"
+            }
+        }
+    </script>
+
+    </body>
+</html>
